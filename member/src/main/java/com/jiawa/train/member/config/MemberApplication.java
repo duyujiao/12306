@@ -1,5 +1,6 @@
 package com.jiawa.train.member.config;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
@@ -10,6 +11,7 @@ import org.springframework.core.env.Environment;
 @SpringBootApplication
 //默认扫描当前包及其子孙包的所有类，扫描不到外面，加@ComponentScan
 @ComponentScan("com.jiawa")
+@MapperScan("com.jiawa.train.member.mapper")
 public class MemberApplication {
 
     private static final Logger LOG = LoggerFactory.getLogger(MemberApplication.class);
