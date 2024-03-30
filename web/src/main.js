@@ -41,7 +41,7 @@ axios.interceptors.response.use(function (response) {
         // 判断状态码是401 跳转到登录页
         console.log("未登录或登录超时，跳到登录页");
         store.commit("setMember", {});
-        notification.error({ description: "未登录或登录超时" });
+        //notification.error({ description: "未登录或登录超时" });
         router.push('/login');
     }
     return Promise.reject(error);
