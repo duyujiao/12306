@@ -76,7 +76,6 @@ export default defineComponent({
           // 登录成功，跳到控台主页
           // router.push("/welcome");
           // store.commit("setMember", data.content);
-          console.log("登陆成功：",data.centent);
         } else {
           notification.error({ description: data.message });
         }
