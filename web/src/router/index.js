@@ -3,27 +3,26 @@ import {notification} from "ant-design-vue";
 import store from "@/store";
 
 
-const routes = [
-
-  {
-    path: '/login',
-    component: () => import('../views/login.vue')
+const routes = [{
+  path: '/login',
+  component: () => import('../views/login.vue')
+}, {
+  path: '/',
+  component: () => import('../views/main.vue'),
+  meta: {
+    loginRequire: true
   },
-  {
-    path: '/',
-    component: () => import('../views/main.vue'),
-    meta: {
-      loginRequire: true
-    },
-    children: [{
+  children: [{
     path: 'welcome',
     component: () => import('../views/main/welcome.vue'),
-  }]
   }, {
-    path: '',
-    redirect: '/welcome'
-  },
-]
+    path: 'passenger',
+    component: () => import('../views/main/passenger.vue'),
+  }]
+}, {
+  path: '',
+  redirect: '/welcome'
+}];
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
