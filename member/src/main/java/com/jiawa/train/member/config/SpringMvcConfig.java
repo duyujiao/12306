@@ -18,6 +18,7 @@ public class SpringMvcConfig implements WebMvcConfigurer {
 
    @Override
    public void addInterceptors(InterceptorRegistry registry) {
+       //放在最前面
        registry.addInterceptor(logInterceptor);
 
        registry.addInterceptor(memberInterceptor)
