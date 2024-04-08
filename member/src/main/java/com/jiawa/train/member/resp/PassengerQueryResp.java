@@ -11,6 +11,7 @@ public class PassengerQueryResp {
     /**
      * id
      */
+    //解决Long类型精度丢失问题哦
     @JsonSerialize(using= ToStringSerializer.class)
     private Long id;
 
