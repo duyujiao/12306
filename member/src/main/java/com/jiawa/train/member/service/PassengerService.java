@@ -68,10 +68,10 @@ public class PassengerService {
         pageResp.setList(list);
         return pageResp;
     }
-//
-//    public void delete(Long id) {
-//        passengerMapper.deleteByPrimaryKey(id);
-//    }
+
+    public void delete(Long id) {
+        passengerMapper.deleteByPrimaryKey(id);
+    }
 //
 //    /**
 //     * 查询我的所有乘客
