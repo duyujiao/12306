@@ -14,8 +14,8 @@ Content-Type: application/json
 token: {{token}}
 
 {
-  "id": 1628627322414436352,
-  "memberId": 1624581077500825600,
+  "id": 1777322249603387392,
+  "memberId": 1773988572823687168,
   "name": "test1",
   "idCard": "123321",
   "type": "1"
