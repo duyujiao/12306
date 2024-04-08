@@ -1,14 +1,15 @@
 package com.jiawa.train.member.controller;
 
+import com.jiawa.train.common.context.LoginMemberContext;
 import com.jiawa.train.common.resp.CommonResp;
+import com.jiawa.train.common.resp.PageResp;
+import com.jiawa.train.member.req.PassengerQueryReq;
 import com.jiawa.train.member.req.PassengerSaveReq;
+import com.jiawa.train.member.resp.PassengerQueryResp;
 import com.jiawa.train.member.service.PassengerService;
 import jakarta.annotation.Resource;
 import jakarta.validation.Valid;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/passenger")
@@ -23,12 +24,12 @@ public class PassengerController {
         return new CommonResp<>();
     }
 
-//    @GetMapping("/query-list")
-//    public CommonResp<PageResp<PassengerQueryResp>> queryList(@Valid PassengerQueryReq req) {
-//        req.setMemberId(LoginMemberContext.getId());
-//        PageResp<PassengerQueryResp> list = passengerService.queryList(req);
-//        return new CommonResp<>(list);
-//    }
+    @GetMapping("/query-list")
+    public CommonResp<PageResp<PassengerQueryResp>> queryList(@Valid PassengerQueryReq req) {
+        req.setMemberId(LoginMemberContext.getId());
+        PageResp<PassengerQueryResp> list = passengerService.queryList(req);
+        return new CommonResp<>(list);
+    }
 //
 //    @DeleteMapping("/delete/{id}")
 //    public CommonResp<Object> delete(@PathVariable Long id) {
