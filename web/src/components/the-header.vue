@@ -1,6 +1,10 @@
 <template>
   <a-layout-header class="header">
-    <div class="logo" />
+    <div class="logo">
+      <router-link to="/welcome" style="color: white; font-size: 18px">
+        甲蛙12306
+      </router-link>
+    </div>
     <div style="float: right; color: white;">
       您好：{{member.mobile}} &nbsp;&nbsp;
       <router-link to="/login" style="color: white;">
@@ -21,6 +25,11 @@
       <a-menu-item key="/passenger">
         <router-link to="/passenger">
           <user-outlined /> &nbsp; 乘车人管理
+        </router-link>
+      </a-menu-item>
+      <a-menu-item key="/ticket">
+        <router-link to="/ticket">
+          <user-outlined /> &nbsp; 余票查询
         </router-link>
       </a-menu-item>
     </a-menu>
