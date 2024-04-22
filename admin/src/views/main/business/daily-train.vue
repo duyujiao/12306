@@ -1,11 +1,8 @@
 <template>
   <p>
     <a-space>
-      <a-date-picker v-model:value="params.date" valueFormat="YYYY-MM-DD" placeholder="请选择日期" />
-      <train-select-view v-model="params.code" width="200px"></train-select-view>
       <a-button type="primary" @click="handleQuery()">刷新</a-button>
       <a-button type="primary" @click="onAdd">新增</a-button>
-      <a-button type="danger" @click="onClickGenDaily">手动生成车次信息</a-button>
     </a-space>
   </p>
   <a-table :dataSource="dailyTrains"
@@ -41,7 +38,7 @@
         <a-date-picker v-model:value="dailyTrain.date" valueFormat="YYYY-MM-DD" placeholder="请选择日期" />
       </a-form-item>
       <a-form-item label="车次编号">
-        < train-select-view v-model="dailyTrain.code" @change="onChangeCode"></train-select-view>
+        <a-input v-model:value="dailyTrain.code" />
       </a-form-item>
       <a-form-item label="车次类型">
         <a-select v-model:value="dailyTrain.type">
@@ -70,26 +67,15 @@
       </a-form-item>
     </a-form>
   </a-modal>
-  <a-modal v-model:visible="genDailyVisible" title="生成车次" @ok="handleGenDailyOk"
-           :confirm-loading="genDailyLoading" ok-text="确认" cancel-text="取消">
-    <a-form :model="genDaily" :label-col="{span: 4}" :wrapper-col="{ span: 20 }">
-      <a-form-item label="日期">
-        <a-date-picker v-model:value="genDaily.date" placeholder="请选择日期"/>
-      </a-form-item>
-    </a-form>
-  </a-modal>
 </template>
 
 <script>
 import { defineComponent, ref, onMounted } from 'vue';
 import {notification} from "ant-design-vue";
 import axios from "axios";
-import TrainSelectView from "@/components/train-select";
-import dayjs from 'dayjs';
 
 export default defineComponent({
   name: "daily-train-view",
-  components: {TrainSelectView},
   setup() {
     const TRAIN_TYPE_ARRAY = window.TRAIN_TYPE_ARRAY;
     const visible = ref(false);
@@ -115,14 +101,6 @@ export default defineComponent({
       pageSize: 10,
     });
     let loading = ref(false);
-    let params = ref({
-      code: null
-    });
-    const genDaily = ref({
-      date: null
-    });
-    const genDailyVisible = ref(false);
-    const genDailyLoading = ref(false);
     const columns = [
     {
       title: '日期',
@@ -227,9 +205,7 @@ export default defineComponent({
       axios.get("/business/admin/daily-train/query-list", {
         params: {
           page: param.page,
-          size: param.size,
-          code: params.value.code,
-          date: params.value.date
+          size: param.size
         }
       }).then((response) => {
         loading.value = false;
@@ -245,42 +221,12 @@ export default defineComponent({
       });
     };
 
-    const handleTableChange = (pagination) => {
-      // console.log("看看自带的分页参数都有啥：" + pagination);
+    const handleTableChange = (page) => {
+      // console.log("看看自带的分页参数都有啥：" + JSON.stringify(page));
+      pagination.value.pageSize = page.pageSize;
       handleQuery({
-        page: pagination.current,
-        size: pagination.pageSize
-      });
-    };
-
-    const onChangeCode = (train) => {
-      console.log("车次下拉组件选择：", train);
-      let t = Tool.copy(train);
-      delete t.id;
-      // 用assign可以合并
-      dailyTrain.value = Object.assign(dailyTrain.value, t);
-    };
-
-    const onClickGenDaily = () => {
-      genDailyVisible.value = true;
-    };
-
-    const handleGenDailyOk = () => {
-      let date = dayjs(genDaily.value.date).format("YYYY-MM-DD");
-      genDailyLoading.value = true;
-      axios.get("/business/admin/daily-train/gen-daily/" + date).then((response) => {
-        genDailyLoading.value = false;
-        let data = response.data;
-        if (data.success) {
-          notification.success({description: "生成成功！"});
-          genDailyVisible.value = false;
-          handleQuery({
-            page: pagination.value.current,
-            size: pagination.value.pageSize
-          });
-        } else {
-          notification.error({description: data.message});
-        }
+        page: page.current,
+        size: page.pageSize
       });
     };
 
@@ -304,14 +250,7 @@ export default defineComponent({
       onAdd,
       handleOk,
       onEdit,
-      onDelete,
-      onChangeCode,
-      params,
-      genDaily,
-      genDailyVisible,
-      handleGenDailyOk,
-      onClickGenDaily,
-      genDailyLoading
+      onDelete
     };
   },
 });
