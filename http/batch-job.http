@@ -53,13 +53,32 @@ Content-Type: application/json
 "name": "com.jiawa.train.batch.job.TestJob",
 "jobGroupName": "default"
 }
-
 ###
 
 POST http://localhost:8000/batch/admin/job/run
 Content-Type: application/json
 
 {
-"name": "com.jiawa.train.batch.job.DailyTrainJob",
-"jobGroupName": "default"
+  "name": "com.jiawa.train.batch.job.DailyTrainJob",
+  "jobGroupName": "default"
 }
+###
+
+POST http://localhost:8000/batch/admin/job/run
+Content-Type: application/json
+
+{
+  "name": "com.jiawa.train.batch.job.TestJob",
+  "jobGroupName": "default"
+}
+###
+
+POST http://localhost:8000/batch/admin/job/pause
+Content-Type: application/json
+
+{
+  "name": "com.jiawa.train.batch.job.DailyTrainJob",
+  "jobGroupName": "default"
+}
+
+
