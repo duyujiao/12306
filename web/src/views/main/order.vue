@@ -308,6 +308,7 @@ export default defineComponent({
 
       console.log("最终购票：", tickets.value);
 
+      //前端调用后端接口
       axios.post("/business/confirm-order/do", {
         dailyTrainTicketId: dailyTrainTicket.id,
         date: dailyTrainTicket.date,
