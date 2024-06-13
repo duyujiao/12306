@@ -3,6 +3,7 @@ package com.jiawa.train.business.service;
 import com.jiawa.train.business.domain.ConfirmOrder;
 import com.jiawa.train.business.domain.DailyTrainSeat;
 import com.jiawa.train.business.domain.DailyTrainTicket;
+import com.jiawa.train.business.enums.ConfirmOrderStatusEnum;
 import com.jiawa.train.business.feign.MemberFeign;
 import com.jiawa.train.business.mapper.ConfirmOrderMapper;
 import com.jiawa.train.business.mapper.DailyTrainSeatMapper;
@@ -119,13 +120,13 @@ public class AfterConfirmOrderService {
             memberTicketReq.setSeatType(dailyTrainSeat.getSeatType());
             CommonResp<Object> commonResp = memberFeign.save(memberTicketReq);
             LOG.info("调用member接口，返回：{}", commonResp);
-//
-//            // 更新订单状态为成功
-//            ConfirmOrder confirmOrderForUpdate = new ConfirmOrder();
-//            confirmOrderForUpdate.setId(confirmOrder.getId());
-//            confirmOrderForUpdate.setUpdateTime(new Date());
-//            confirmOrderForUpdate.setStatus(ConfirmOrderStatusEnum.SUCCESS.getCode());
-//            confirmOrderMapper.updateByPrimaryKeySelective(confirmOrderForUpdate);
+
+            // 更新订单状态为成功
+            ConfirmOrder confirmOrderForUpdate = new ConfirmOrder();
+            confirmOrderForUpdate.setId(confirmOrder.getId());
+            confirmOrderForUpdate.setUpdateTime(new Date());
+            confirmOrderForUpdate.setStatus(ConfirmOrderStatusEnum.SUCCESS.getCode());
+            confirmOrderMapper.updateByPrimaryKeySelective(confirmOrderForUpdate);
 //
 //            // 模拟调用方出现异常
 //            // Thread.sleep(10000);
