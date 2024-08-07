@@ -2,7 +2,7 @@ package com.jiawa.train.business.domain;
 
 import java.util.Date;
 
-public class Train {
+public class Train{
     private Long id;
 
     private String code;
