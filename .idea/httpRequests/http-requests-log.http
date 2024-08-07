@@ -1,3 +1,23 @@
+GET http://localhost:8000/business/redis/get/123
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-08-07T233522.200.json
+
+###
+
+GET http://localhost:8000/business/redis/set/123/test1
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-08-07T233433.200.json
+
+###
+
 GET http://localhost:8000/business/admin/daily-train-ticket/query-list?page=1&size=5&trainCode=G2&start=北京&end=西安
 Content-Type: application/json
 Connection: Keep-Alive
@@ -555,38 +575,6 @@ Accept-Encoding: br,deflate,gzip,x-gzip
 }
 
 <> 2024-05-16T193517.200.json
-
-###
-
-POST http://localhost:8000/batch/admin/job/run
-Content-Type: application/json
-Content-Length: 78
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "name": "com.jiawa.train.batch.job.TestJob",
-  "jobGroupName": "default"
-}
-
-<> 2024-05-16T193515.200.json
-
-###
-
-POST http://localhost:8000/batch/admin/job/delete
-Content-Type: application/json
-Content-Length: 78
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "name": "com.jiawa.train.batch.job.TestJob",
-  "jobGroupName": "default"
-}
-
-<> 2024-05-16T193459.200.json
 
 ###
 
