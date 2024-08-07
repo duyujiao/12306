@@ -1,0 +1,592 @@
+GET http://localhost:8000/business/admin/daily-train-ticket/query-list?page=1&size=5&trainCode=G2&start=北京&end=西安
+Content-Type: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-08-07T231921.200.json
+
+###
+
+GET http://localhost:8000/business/admin/daily-train-ticket/query-list?page=1&size=5&trainCode=G2&start=北京&end=西安
+Content-Type: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-08-07T231915.200.json
+
+###
+
+GET http://localhost:8000/business/admin/daily-train-ticket/query-list?page=1&size=5&trainCode=G2&start=北京&end=西安
+Content-Type: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-08-07T230137.200.json
+
+###
+
+GET http://localhost:8000/business/admin/daily-train-ticket/query-list?page=1&size=5&trainCode=G2&start=北京&end=西安
+Content-Type: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-08-07T230132.200.json
+
+###
+
+GET http://localhost:8000/business/admin/daily-train-ticket/query-list?page=1&size=5&trainCode=G2&start=北京&end=西安
+Content-Type: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-08-07T230028.200.json
+
+###
+
+GET http://localhost:8000/business/admin/daily-train-ticket/query-list?page=1&size=5&trainCode=G2&start=北京&end=西安
+Content-Type: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-08-07T230020.200.json
+
+###
+
+GET http://localhost:8000/business/admin/daily-train-ticket/query-list?page=1&size=5&trainCode=G2&start=北京&end=西安
+Content-Type: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-08-07T223733.200.json
+
+###
+
+GET http://localhost:8000/business/admin/daily-train-ticket/query-list?page=1&size=5&trainCode=G2&start=北京&end=西安
+Content-Type: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-08-07T223724.500.json
+
+###
+
+GET http://localhost:8000/business/admin/daily-train-ticket/query-list?page=1&size=5&trainCode=G2&start=北京&end=西安
+Content-Type: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-08-07T223620.500.html
+
+###
+
+GET http://localhost:8000/business/admin/daily-train-ticket/query-list?page=1&size=5&trainCode=G2&start=北京&end=广州
+Content-Type: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-08-07T223528.500.html
+
+###
+
+GET http://localhost:8000/business/admin/daily-train-ticket/query-list?page=1&size=5&trainCode=G2&start=北京&end=广州
+Content-Type: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-08-07T223505.500.html
+
+###
+
+GET http://localhost:8000/business/admin/train/query-all
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-08-07T222320.200.json
+
+###
+
+GET http://localhost:8000/business/admin/train/query-all
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-08-07T222237.200.json
+
+###
+
+DELETE http://localhost:8000/business/admin/train/delete/123
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-08-07T222224.200.json
+
+###
+
+GET http://localhost:8000/business/admin/train/query-all
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-08-07T222215.200.json
+
+###
+
+GET http://localhost:8000/business/admin/train/query-all
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-08-07T221840.200.json
+
+###
+
+GET http://localhost:8000/business/admin/train/query-all
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-08-07T221815.200.json
+
+###
+
+GET http://localhost:8000/business/admin/train/query-all
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-08-07T214743.200.json
+
+###
+
+GET http://localhost:8000/business/admin/train/query-all
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-08-07T214650.200.json
+
+###
+
+GET http://localhost:8000/business/admin/train/query-all
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-08-07T214645.200.json
+
+###
+
+GET http://localhost:8000/business/admin/train/query-all
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-08-07T211207.200.json
+
+###
+
+GET http://localhost:8003/batch/hello
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-07-12T223400.200.json
+
+###
+
+GET http://localhost:8001/member/hello
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-07-10T224352.200.json
+
+###
+
+GET http://localhost:8001/member/hello
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-07-10T224314.200.json
+
+###
+
+GET http://localhost:8001/member/hello
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-07-10T224146.200.json
+
+###
+
+GET http://localhost:8001/member/hello
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-07-10T224003.200.json
+
+###
+
+GET http://localhost:8001/member/hello
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-07-10T223852.200.json
+
+###
+
+GET http://localhost:8001/member/hello
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-07-10T223848.200.json
+
+###
+
+GET http://localhost:8000/member/hello
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-07-10T223749.200.json
+
+###
+
+GET http://localhost:8001/member/hello
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-07-10T223747.200.json
+
+###
+
+GET http://localhost:8001/member/hello
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-07-10T223745.200.json
+
+###
+
+GET http://localhost:8000/member/hello
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-07-10T223744.200.json
+
+###
+
+GET http://localhost:8000/member/hello
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-07-10T223742.200.json
+
+###
+
+GET http://localhost:8000/member/hello
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-07-10T223718.200.json
+
+###
+
+GET http://localhost:8000/member/hello
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-07-10T220656.200.json
+
+###
+
+POST http://localhost:8000/batch/admin/job/run
+Content-Type: application/json
+Content-Length: 84
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "com.jiawa.train.batch.job.DailyTrainJob",
+  "jobGroupName": "default"
+}
+
+<> 2024-05-21T221629.200.json
+
+###
+
+POST http://localhost:8000/batch/admin/job/run
+Content-Type: application/json
+Content-Length: 78
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "com.jiawa.train.batch.job.TestJob",
+  "jobGroupName": "default"
+}
+
+<> 2024-05-21T221624.200.json
+
+###
+
+POST http://localhost:8000/batch/admin/job/run
+Content-Type: application/json
+Content-Length: 84
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "com.jiawa.train.batch.job.DailyTrainJob",
+  "jobGroupName": "default"
+}
+
+<> 2024-05-21T221233.200.json
+
+###
+
+POST http://localhost:8000/batch/admin/job/run
+Content-Type: application/json
+Content-Length: 84
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "com.jiawa.train.batch.job.DailyTrainJob",
+  "jobGroupName": "default"
+}
+
+<> 2024-05-16T210100.200.json
+
+###
+
+POST http://localhost:8000/batch/admin/job/run
+Content-Type: application/json
+Content-Length: 84
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "com.jiawa.train.batch.job.DailyTrainJob",
+  "jobGroupName": "default"
+}
+
+<> 2024-05-16T201259.200.json
+
+###
+
+POST http://localhost:8000/batch/admin/job/pause
+Content-Type: application/json
+Content-Length: 84
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "com.jiawa.train.batch.job.DailyTrainJob",
+  "jobGroupName": "default"
+}
+
+<> 2024-05-16T201251.200.json
+
+###
+
+POST http://localhost:8000/batch/admin/job/run
+Content-Type: application/json
+Content-Length: 78
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "com.jiawa.train.batch.job.TestJob",
+  "jobGroupName": "default"
+}
+
+<> 2024-05-16T200157.200.json
+
+###
+
+POST http://localhost:8000/batch/admin/job/pause
+Content-Type: application/json
+Content-Length: 78
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "com.jiawa.train.batch.job.TestJob",
+  "jobGroupName": "default"
+}
+
+<> 2024-05-16T200154.200.json
+
+###
+
+POST http://localhost:8000/batch/admin/job/add
+Content-Type: application/json
+Content-Length: 137
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "com.jiawa.train.batch.job.TestJob",
+  "jobGroupName": "default",
+  "cronExpression": "*/2 * * * * ?",
+  "desc": "test job"
+}
+
+<> 2024-05-16T200148.200.json
+
+###
+
+POST http://localhost:8000/batch/admin/job/run
+Content-Type: application/json
+Content-Length: 84
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "com.jiawa.train.batch.job.DailyTrainJob",
+  "jobGroupName": "default"
+}
+
+<> 2024-05-16T195943.200.json
+
+###
+
+POST http://localhost:8000/batch/admin/job/run
+Content-Type: application/json
+Content-Length: 78
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "com.jiawa.train.batch.job.TestJob",
+  "jobGroupName": "default"
+}
+
+<> 2024-05-16T193530.200.json
+
+###
+
+POST http://localhost:8003/batch/admin/job/run
+Content-Type: application/json
+Content-Length: 78
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "com.jiawa.train.batch.job.TestJob",
+  "jobGroupName": "default"
+}
+
+<> 2024-05-16T193525.200.json
+
+###
+
+POST http://localhost:8000/batch/admin/job/run
+Content-Type: application/json
+Content-Length: 78
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "com.jiawa.train.batch.job.TestJob",
+  "jobGroupName": "default"
+}
+
+<> 2024-05-16T193517.200.json
+
+###
+
+POST http://localhost:8000/batch/admin/job/run
+Content-Type: application/json
+Content-Length: 78
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "com.jiawa.train.batch.job.TestJob",
+  "jobGroupName": "default"
+}
+
+<> 2024-05-16T193515.200.json
+
+###
+
+POST http://localhost:8000/batch/admin/job/delete
+Content-Type: application/json
+Content-Length: 78
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "com.jiawa.train.batch.job.TestJob",
+  "jobGroupName": "default"
+}
+
+<> 2024-05-16T193459.200.json
+
+###
+
