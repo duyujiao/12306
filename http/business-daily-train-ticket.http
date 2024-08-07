@@ -4,3 +4,7 @@ Content-Type: application/json
 
 GET http://localhost:8000/business/admin/daily-train-ticket/query-list2?page=1&size=5&trainCode=G2&start=北京&end=西安
 Content-Type: application/json
+###
+
+GET http://localhost:8000/business/admin/daily-train-ticket/query-list3?page=1&size=5&trainCode=G2&start=北京&end=西安
+Content-Type: application/json
