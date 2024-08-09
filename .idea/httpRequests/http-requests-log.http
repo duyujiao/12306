@@ -1,3 +1,39 @@
+GET http://localhost:8000/batch/hello
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-08-10T011100.200.json
+
+###
+
+POST http://localhost:8000/member/member/login
+Content-Type: application/json
+Content-Length: 47
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "mobile": "13000000000",
+  "code": "8888"
+}
+
+<> 2024-08-10T010946.200.json
+
+###
+
+GET http://localhost:8000/batch/hello
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-08-10T005655.200.json
+
+###
+
 GET http://localhost:8000/business/hello
 Accept: application/json
 Connection: Keep-Alive
@@ -478,42 +514,6 @@ User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
 <> 2024-07-10T223742.200.json
-
-###
-
-GET http://localhost:8000/member/hello
-Accept: application/json
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2024-07-10T223718.200.json
-
-###
-
-GET http://localhost:8000/member/hello
-Accept: application/json
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2024-07-10T220656.200.json
-
-###
-
-POST http://localhost:8000/batch/admin/job/run
-Content-Type: application/json
-Content-Length: 84
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "name": "com.jiawa.train.batch.job.DailyTrainJob",
-  "jobGroupName": "default"
-}
-
-<> 2024-05-21T221629.200.json
 
 ###
 
