@@ -46,11 +46,11 @@
 
 
 
-<!--        &lt;!&ndash; 限流熔断 &ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>com.alibaba.cloud</groupId>-->
-<!--            <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>-->
-<!--        </dependency>-->
+        <!-- 限流熔断 -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
+        </dependency>
 
 <!--        &lt;!&ndash; sentinel + nacos &ndash;&gt;-->
 <!--        <dependency>-->
