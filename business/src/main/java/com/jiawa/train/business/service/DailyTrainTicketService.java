@@ -70,7 +70,7 @@ public class DailyTrainTicketService {
     public PageResp<DailyTrainTicketQueryResp> queryList2(DailyTrainTicketQueryReq req) {
         return queryList(req);
     }
-    @Cacheable(value="DailyTrainTicketService.queryList")
+    //@Cacheable(value="DailyTrainTicketService.queryList")
     public PageResp<DailyTrainTicketQueryResp> queryList(DailyTrainTicketQueryReq req) {
         // 常见的缓存过期策略
         // TTL 超时时间
