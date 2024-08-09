@@ -119,6 +119,7 @@ public class ConfirmOrderService {
          RLock lock = null;
         /*
             关于红锁，看16.7节：
+            //拿到超过一半以上的锁才算成功，否则拿到锁失败，解决单机redis宕机问题
             A B C D E
             1: A B C D E
             2: C D E
