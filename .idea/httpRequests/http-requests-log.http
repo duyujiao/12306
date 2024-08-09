@@ -1,3 +1,13 @@
+GET http://localhost:8001/member/hello
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-08-09T171354.200.json
+
+###
+
 POST http://localhost:8000/business/confirm-order/do
 Content-Type: application/json
 token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MjMxMjkyMDcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE3NzM5ODg1NzI4MjM2ODcxNjgsImV4cCI6MTcyMzIxNTYwNywiaWF0IjoxNzIzMTI5MjA3fQ.gdYzSy4qJ7HeG24e3qzL7EdlN3grdlYyi0-i-gtp4JY
@@ -510,22 +520,6 @@ Accept-Encoding: br,deflate,gzip,x-gzip
 }
 
 <> 2024-05-21T221624.200.json
-
-###
-
-POST http://localhost:8000/batch/admin/job/run
-Content-Type: application/json
-Content-Length: 84
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "name": "com.jiawa.train.batch.job.DailyTrainJob",
-  "jobGroupName": "default"
-}
-
-<> 2024-05-21T221233.200.json
 
 ###
 
