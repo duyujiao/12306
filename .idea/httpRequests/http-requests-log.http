@@ -1,3 +1,13 @@
+GET http://localhost:8000/business/kaptcha/image-code/123
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-08-11T112510.200.jpeg
+
+###
+
 GET http://localhost:8000/batch/hello
 Accept: application/json
 Connection: Keep-Alive
@@ -504,16 +514,6 @@ User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
 <> 2024-07-10T223747.200.json
-
-###
-
-GET http://localhost:8001/member/hello
-Accept: application/json
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2024-07-10T223745.200.json
 
 ###
 
