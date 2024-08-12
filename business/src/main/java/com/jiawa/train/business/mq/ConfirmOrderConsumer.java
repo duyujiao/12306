@@ -9,6 +9,7 @@ import org.apache.rocketmq.spring.annotation.RocketMQMessageListener;
 import org.apache.rocketmq.spring.core.RocketMQListener;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.slf4j.MDC;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -25,7 +26,7 @@ public class ConfirmOrderConsumer implements RocketMQListener<MessageExt> {
         byte[] body = messageExt.getBody();
 //       ConfirmOrderMQDto dto = JSON.parseObject(new String(body), ConfirmOrderMQDto.class);
         ConfirmOrderDoReq req = JSON.parseObject(new String(body),ConfirmOrderDoReq.class);
-//        MDC.put("LOG_ID", dto.getLogId());
+        MDC.put("LOG_ID", req.getLogId());
         LOG.info("ROCKETMQ收到消息：{}", new String(body));
         //confirmOrderService.doConfirm(dto);
         confirmOrderService.doConfirm(req);
