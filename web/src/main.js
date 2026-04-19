@@ -6,6 +6,7 @@ import Antd, {notification} from 'ant-design-vue';
 import 'ant-design-vue/dist/antd.css';
 import * as Icons from '@ant-design/icons-vue';
 import axios from 'axios';
+import { getApiBaseUrl } from './config/apiBase';
 import './assets/js/enums';
 
 
@@ -37,6 +38,10 @@ axios.interceptors.response.use(function (response) {
 }, error => {
     console.log('返回错误：', error);
     const response = error.response;
+    // 断网、连接被拒、后端未启动等情况下没有 HTTP 响应，不能读 status
+    if (!response) {
+        return Promise.reject(error);
+    }
     const status = response.status;
     if (status === 401) {
         // 判断状态码是401 跳转到登录页
@@ -47,7 +52,7 @@ axios.interceptors.response.use(function (response) {
     }
     return Promise.reject(error);
 });
-axios.defaults.baseURL = process.env.VUE_APP_SERVER;
+axios.defaults.baseURL = getApiBaseUrl();
 console.log('环境：', process.env.NODE_ENV);
-console.log('服务端：', process.env.VUE_APP_SERVER);
+console.log('服务端：', axios.defaults.baseURL);
 

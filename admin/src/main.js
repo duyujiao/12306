@@ -1,4 +1,4 @@
-import { createApp } from 'vue'
+﻿import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
@@ -6,6 +6,7 @@ import Antd from 'ant-design-vue';
 import 'ant-design-vue/dist/antd.css';
 import * as Icons from '@ant-design/icons-vue';
 import axios from 'axios';
+import { getApiBaseUrl } from './config/apiBase';
 import './assets/js/enums';
 
 const app = createApp(App);
@@ -33,7 +34,7 @@ axios.interceptors.response.use(function (response) {
     console.log('返回错误：', error);
     return Promise.reject(error);
 });
-axios.defaults.baseURL = process.env.VUE_APP_SERVER;
+axios.defaults.baseURL = getApiBaseUrl();
 console.log('环境：', process.env.NODE_ENV);
-console.log('服务端：', process.env.VUE_APP_SERVER);
+console.log('服务端：', axios.defaults.baseURL);
 
